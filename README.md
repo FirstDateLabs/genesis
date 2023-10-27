@@ -1,42 +1,20 @@
-# Blockchain and Internet: Addressing the Need for Auditability and Predictability
+## Question: What features does the Internet as we know it lack, that we need blockchains?
 
-## Introduction
+**AUDITABILITY AND PREDICTABILITY ARE KEY!**
 
-In this README, we explore the question: What features does the Internet, as we know it, lack that we need blockchains for? We emphasize the importance of auditability and predictability in this context.
+Current blockchains do not respect their developers. Why? Because they do not allow the developers to migrate to some other platform natively. Basically, you're stuck with the chain for the entire life of the application.
 
-### Lack of Developer Freedom
+Of course, you can name many examples that have done such migrations successfully. Okay, I totally agree with you on that. But I have a question: Can they do it again? I mean, yeah, what's stopping them after all, right? They can employ the same process they did for the first migration. But is this scalable? If some key feature is missing on the host platform, your first engineering solution would not be to simply make use of the new technology wherever it is being offered. You have to come up with hacks, tricks, ad-hoc solutions. SUCH A WASTE OF ENGINEERING TIME. What we could do is to respect the developers.
 
-Current blockchain technology often falls short in respecting developers due to a significant limitation: they do not allow developers to migrate to another platform natively. This means that once a choice is made to build on a particular blockchain, developers are effectively locked into it for the entire lifespan of their application.
+By now, I have used the word "developer" a bunch of times. A developer is an abstraction for all the applications being built on top of those platforms. They could be individuals, start-ups, big corps, etc. In this model of "Blockchain," the collective performance of those developers is wasted just because they are stuck with a choice they made before their application even became alive. On top of all that, they are stuck with a limited set of choices if they want any kind of verifiable "auditability" and "predictability." THEY ARE NOT FREE TO FULLY EXPLORE THE TRADE-OFF SPECTRUM of "auditability" and "predictability."
 
-While successful migrations have been accomplished, the question arises: Can they be repeated? While it is possible to replicate the migration process, scalability becomes a concern. Moreover, when key features are missing on the host platform, developers are forced to resort to hacks, tricks, and ad-hoc solutions, consuming valuable engineering time. The solution lies in respecting developers' freedom.
+Some of the tools that we have in our toolbox to make the Internet as we know it have arbitrary degrees of "auditability" and "predictability" without loss of compatibility with the current infrastructure.
 
-## Developers' Perspective
+1. **SSL (Secure Sockets Layer)**: Secure communication using digital signatures.
+2. **MPC (Multi-Party Computation)**: Using MPC, untrusted clients can verifiably prove communication among different servers.
 
-We frequently refer to "developers" in this context. Developers represent a wide spectrum of individuals, including solo programmers, start-ups, and large corporations. Within the blockchain model, developers' collective performance is hindered because they are confined to choices made early in their application's development. This limitation extends to the available options for achieving verifiable "auditability" and "predictability."
+Communication is verifiable through the SSL protocol, using MPC on the client side, without needing to trust the client.
 
-Developers should have the freedom to explore the trade-off spectrum of "auditability" and "predictability" without artificial constraints.
+**Scenario**: A client collaborates with server A to generate a verifiably generated request. The request is then sent to server B along with a validity proof.
 
-## Tools for Improvement
-
-Fortunately, there are tools in our technological toolbox that can enhance the Internet's "auditability" and "predictability" without compromising compatibility with existing infrastructure.
-
-1. **SSL (Secure Sockets Layer)**: SSL enables secure communication using digital signatures, ensuring the authenticity and integrity of data transmission.
-
-2. **MPC (Multi-Party Computation)**: MPC allows untrusted clients to verifiably prove communication among different servers, ensuring data security without relying on client trust.
-
-## Verifiable Communication
-
-Through the use of SSL and MPC, we can achieve verifiable communication without the need to trust clients explicitly.
-
-Consider the following scenario:
-
-1. The client collaborates with server A to generate a verifiably generated request.
-2. This request, along with a validity proof, is then transmitted to server B.
-
-## Trust Considerations
-
-The need for trust becomes less crucial when these technologies are implemented effectively, ultimately enhancing the auditability and predictability of Internet-based systems.
-
----
-
-By addressing these issues and providing developers with greater flexibility, we can pave the way for a more robust and efficient Internet infrastructure that caters to the diverse needs of developers and users alike.
+If you "trust" the server...
